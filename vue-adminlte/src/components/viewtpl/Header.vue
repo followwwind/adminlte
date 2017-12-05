@@ -2,7 +2,7 @@
 	<div>
 		<header class="main-header">
 		    <!-- Logo -->
-		    <a ui-sref="app.index" class="logo">
+		    <a href="index2.html" class="logo">
 		      <!-- mini logo for sidebar mini 50x50 pixels -->
 		      <span class="logo-mini"><b>A</b>LT</span>
 		      <!-- logo for regular state and mobile devices -->
@@ -11,7 +11,7 @@
 		    <!-- Header Navbar: style can be found in header.less -->
 		    <nav class="navbar navbar-static-top">
 		      <!-- Sidebar toggle button-->
-		      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+		      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
 		        <span class="sr-only">Toggle navigation</span>
 		      </a>
 
@@ -19,7 +19,7 @@
 		        <ul class="nav navbar-nav">
 		          <!-- Messages: style can be found in dropdown.less-->
 		          <li class="dropdown messages-menu">
-		            <a class="dropdown-toggle" data-toggle="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 		              <i class="fa fa-envelope-o"></i>
 		              <span class="label label-success">4</span>
 		            </a>
@@ -154,7 +154,8 @@
 		                        <small class="pull-right">20%</small>
 		                      </h3>
 		                      <div class="progress xs">
-		                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+		                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+		                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
 		                          <span class="sr-only">20% Complete</span>
 		                        </div>
 		                      </div>
@@ -168,7 +169,8 @@
 		                        <small class="pull-right">40%</small>
 		                      </h3>
 		                      <div class="progress xs">
-		                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+		                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
+		                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
 		                          <span class="sr-only">40% Complete</span>
 		                        </div>
 		                      </div>
@@ -182,7 +184,8 @@
 		                        <small class="pull-right">60%</small>
 		                      </h3>
 		                      <div class="progress xs">
-		                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+		                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
+		                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
 		                          <span class="sr-only">60% Complete</span>
 		                        </div>
 		                      </div>
@@ -196,7 +199,8 @@
 		                        <small class="pull-right">80%</small>
 		                      </h3>
 		                      <div class="progress xs">
-		                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+		                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
+		                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
 		                          <span class="sr-only">80% Complete</span>
 		                        </div>
 		                      </div>

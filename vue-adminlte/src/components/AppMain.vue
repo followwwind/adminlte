@@ -1,13 +1,17 @@
 <template>
-	<div id="appMain">
+	<div id="appMain" class="wrapper">
 		<!-- header -->
 		<app-header></app-header>
 		<!-- aside -->
 		<app-aside></app-aside>
 		<!-- content -->
-		<router-view/>
+		<div class="">
+			<router-view/>
+		</div>
 		<!-- footer -->
 		<app-footer></app-footer>
+		<!-- setting -->
+		<app-setting></app-setting>
 	</div>
 </template>
 
@@ -15,6 +19,7 @@
 	import Aside from '@/components/viewtpl/Aside'
 	import Header from '@/components/viewtpl/Header'
 	import Footer from '@/components/viewtpl/Footer'
+	import Setting from '@/components/viewtpl/Setting'
 	export default {
 	  name: 'AppMain',
 	  data () {
@@ -25,7 +30,8 @@
 	  components: {
 	  	"app-aside": Aside,
 	  	"app-header": Header,
-	  	"app-footer": Footer
+	  	"app-footer": Footer,
+	  	"app-setting": Setting
 	  }
 	}
 </script>

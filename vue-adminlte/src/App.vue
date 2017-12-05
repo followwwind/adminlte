@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="hold-transition skin-blue sidebar-mini">
     <router-view/>
   </div>
 </template>
