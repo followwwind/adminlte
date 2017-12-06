@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import AppMain from '@/components/AppMain'
-import HelloWorld from '@/components/HelloWorld'
-import Index from '@/components/page/dashboard/Index'
+
+
+const HelloWorld = () => import('@/components/HelloWorld')
 
 Vue.use(Router)
 
@@ -14,7 +14,7 @@ export default new Router({
     },
     {
     	path: '/app',
-		component: AppMain,
+		component: resolve => require(['@/components/AppMain'],resolve),
 		children: [
 			{
 				path: '/',
@@ -23,12 +23,12 @@ export default new Router({
 			{
 				path: '/app/hello',
 				name: 'HelloWorld',
-				component: HelloWorld,
+				component: HelloWorld
 			},
 			{
 				path: '/app/index',
 				name: 'Index',
-				component: Index
+				component: resolve => require(['@/components/page/dashboard/Index'],resolve)
 			}
 		]
     }
