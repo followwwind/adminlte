@@ -13,6 +13,10 @@ export default new Router({
 		redirect: '/app/index'
     },
     {
+		path: '/hello',
+		component: HelloWorld
+    },
+    {
     	path: '/app',
 		component: resolve => require(['@/components/AppMain'],resolve),
 		children: [
@@ -21,12 +25,12 @@ export default new Router({
 				redirect: '/app/index'
 			},
 			{
-				path: '/app/hello',
+				path: 'hello',
 				name: 'HelloWorld',
 				component: HelloWorld
 			},
 			{
-				path: '/app/index',
+				path: 'index',
 				name: 'Index',
 				component: resolve => require(['@/components/page/dashboard/Index'],resolve)
 			}
