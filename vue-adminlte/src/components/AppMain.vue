@@ -1,11 +1,11 @@
 <template>
-	<div id="appMain" class="wrapper">
+	<div id="appMain">
 		<!-- header -->
 		<app-header></app-header>
 		<!-- aside -->
 		<app-aside></app-aside>
 		<!-- content -->
-		<div class="">
+		<div class="content-wrapper">
 			<router-view/>
 		</div>
 		<!-- footer -->

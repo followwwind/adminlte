@@ -451,7 +451,7 @@ a:focus {
   }
 }
 .sidebar {
-  padding-bottom: 10px;
+  padding-bottom: 50px;
 }
 .sidebar-form input:focus {
   border-color: transparent;

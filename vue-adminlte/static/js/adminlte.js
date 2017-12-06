@@ -605,16 +605,20 @@ throw new Error('AdminLTE requires jQuery')
     var neg           = $(Selector.mainHeader).outerHeight() + footerHeight;
     var windowHeight  = $(window).height();
     var sidebarHeight = $(Selector.sidebar).height() || 0;
+    
 
+    /*console.log(windowHeight);
+    console.log(neg);
+    console.log(sidebarHeight);*/
     // Set the min-height of the content and sidebar based on
     // the height of the document.
     if ($('body').hasClass(ClassName.fixed)) {
       $(Selector.contentWrapper).css('min-height', windowHeight - footerHeight);
     } else {
       var postSetHeight;
-
-      if (windowHeight >= sidebarHeight) {
-        $(Selector.contentWrapper).css('min-height', windowHeight - neg);
+      var contentHeight = windowHeight - neg;
+      if (contentHeight >= sidebarHeight) {
+        $(Selector.contentWrapper).css('min-height', contentHeight);
         postSetHeight = windowHeight - neg;
       } else {
         $(Selector.contentWrapper).css('min-height', sidebarHeight);
